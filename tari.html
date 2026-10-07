@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TARI | EKSKUL TENGARAN</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ekskul.css" />
+  </head>
+  <body>
+    <!-- BACKGROUND EFFECT -->
+    <div class="bg-glow glow-one"></div>
+    <div class="bg-glow glow-two"></div>
+    <div class="grid-background"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar-extravia" id="beranda">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <div class="logo">EXTRAVIA</div>
+          <div class="logo-sub">EKSTRAKURIKULER SEKOLAH</div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+          <i class="bi bi-list"></i>
+        </button>
+        <nav class="nav-links align-items-center" id="navLinks">
+          <a href="index.html#beranda">Beranda</a>
+          <a href="index.html#langkah">Cara Daftar</a>
+          <a href="index.html#ekstrakurikuler">Ekstrakurikuler</a>
+          <a href="index.html#pendaftaran" class="btn-nav-cta ms-3"
+            >Daftar Sekarang</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-left">
+          <div class="hero-label">
+            PROFIL EKSTRAKURIKULER
+
+            <span>/</span>
+
+            15 — 15
+
+            <b>SENI & BUDAYA</b>
+          </div>
+
+          <h1>TARI</h1>
+
+          <p class="hero-description">
+            Mengembangkan bakat dan kreativitas melalui seni tari. Ekskul Tari
+            menjadi wadah bagi siswa untuk mempelajari berbagai gerakan tari,
+            mengenal budaya Indonesia, melatih kelenturan, serta membangun rasa
+            percaya diri dan kekompakan melalui berbagai penampilan.
+          </p>
+
+          <a href="#tentang" class="main-button">
+            Kenali lebih dekat
+
+            <span>↓</span>
+          </a>
+
+          <div class="hero-stat">
+            <div>
+              <strong>01</strong>
+
+              <span>EKSKUL</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+
+              <span>SEMANGAT</span>
+            </div>
+
+            <div>
+              <strong>∞</strong>
+
+              <span>KREATIVITAS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="image-frame">
+            <video autoplay muted loop playsinline>
+              <source src="asset/tari.mp4" type="video/mp4" />
+            </video>
+
+            <div class="image-overlay"></div>
+
+            <div class="image-top">
+              <span>DRUMBAND / TENGARAN</span>
+              <span>2026</span>
+            </div>
+
+            <div class="image-bottom">
+              <span>ILUSTRASI KEGIATAN</span>
+              <strong>06<small>/15</small></strong>
+            </div>
+          </div>
+
+          <div class="floating-card">
+            <span>✦</span>
+
+            <p>
+              KREATIF<br />
+              KOMPAK<br />
+              BERBUDAYA
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>TARI</span>
+
+          <i>✦</i>
+
+          <span>SENI BUDAYA</span>
+
+          <i>✦</i>
+
+          <span>KREATIVITAS</span>
+
+          <i>✦</i>
+
+          <span>KEKOMPAKAN</span>
+
+          <i>✦</i>
+
+          <span>TARI</span>
+
+          <i>✦</i>
+
+          <span>TRADISI</span>
+
+          <i>✦</i>
+        </div>
+      </div>
+
+      <section class="content-nav">
+        <div class="content-title">DI HALAMAN INI</div>
+
+        <div class="content-links">
+          <a href="#kegiatan"> KEGIATAN </a>
+
+          <a href="#kelebihan"> KELEBIHAN </a>
+
+          <a href="#manfaat"> MANFAAT </a>
+
+          <a href="#gabung"> CARA BERGABUNG </a>
+        </div>
+      </section>
+
+      <section class="section about" id="tentang">
+        <div class="section-number">01 / KENALI LEBIH DEKAT</div>
+
+        <div class="section-grid">
+          <div>
+            <h2>
+              Apa itu
+
+              <span>Tari?</span>
+            </h2>
+          </div>
+
+          <div class="text-content">
+            <p>
+              Ekskul Tari adalah kegiatan ekstrakurikuler yang berfokus pada
+              pengembangan seni gerak dan kreativitas melalui berbagai jenis
+              tarian. Anggota belajar berbagai gerakan, pola lantai, ekspresi,
+              serta teknik dasar tari secara bertahap dan menyenangkan.
+            </p>
+
+            <p>
+              Selain mengembangkan kemampuan menari, anggota juga belajar
+              tentang kedisiplinan, konsentrasi, kerja sama, percaya diri, dan
+              menghargai kekayaan seni budaya Indonesia. Kegiatan Tari menjadi
+              ruang bagi siswa untuk mengekspresikan diri sekaligus melestarikan
+              budaya melalui seni pertunjukan.
+            </p>
+
+            <div class="mini-line"></div>
+
+            <span class="quote">
+              "Bergerak dengan indah, berkarya dengan kreativitas, dan menjaga
+              budaya."
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section activities" id="kegiatan">
+        <div class="section-number">02 / APA YANG DILAKUKAN</div>
+
+        <div class="activities-heading">
+          <h2>
+            Berlatih bersama
+
+            <span> dengan semangat dan kreativitas. </span>
+          </h2>
+
+          <p>
+            Setiap kegiatan Tari dirancang untuk melatih gerakan, ekspresi,
+            koordinasi, kekompakan, serta kreativitas melalui berbagai latihan
+            seni tari.
+          </p>
+        </div>
+
+        <div class="activity-list">
+          <article class="activity-card">
+            <div class="activity-number">01 —</div>
+
+            <div>
+              <h3>Latihan Gerakan Tari</h3>
+
+              <p>
+                Mempelajari gerakan dasar, teknik, ekspresi, serta koordinasi
+                tubuh melalui latihan tari secara bertahap dan terarah.
+              </p>
+            </div>
+
+            <span class="activity-icon"> ✦ </span>
+          </article>
+
+          <article class="activity-card">
+            <div class="activity-number">02 —</div>
+
+            <div>
+              <h3>Tari Tradisional</h3>
+
+              <p>
+                Mengenal dan mempelajari berbagai tarian tradisional Indonesia
+                sebagai bentuk apresiasi serta upaya menjaga dan melestarikan
+                budaya daerah.
+              </p>
+            </div>
+
+            <span class="activity-icon"> + </span>
+          </article>
+
+          <article class="activity-card">
+            <div class="activity-number">03 —</div>
+
+            <div>
+              <h3>Penampilan & Pentas</h3>
+
+              <p>
+                Mempersiapkan penampilan tari untuk berbagai kegiatan sekolah,
+                acara budaya, peringatan hari tertentu, dan kegiatan lainnya
+                dengan penuh percaya diri.
+              </p>
+            </div>
+
+            <span class="activity-icon"> ↗ </span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section advantages" id="kelebihan">
+        <div class="section-number">03 / PERTIMBANGKAN</div>
+
+        <div class="advantage-grid">
+          <div>
+            <h2>
+              Kenapa harus
+
+              <span>Tari?</span>
+            </h2>
+
+            <p class="large-text">
+              Bukan hanya tentang belajar gerakan tari. Ekskul Tari membantu
+              mengembangkan kreativitas, meningkatkan rasa percaya diri, melatih
+              kedisiplinan, membangun kekompakan, serta mengenalkan dan
+              melestarikan seni budaya Indonesia.
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="info-card cyan-card">
+              <span> + </span>
+
+              <small> KELEBIHAN </small>
+
+              <h3>Lebih kreatif</h3>
+
+              <p>
+                Mengembangkan kemampuan dalam menciptakan gerakan, mengolah
+                ekspresi, dan menampilkan karya seni yang menarik bersama
+                anggota lainnya.
+              </p>
+            </div>
+
+            <div class="info-card pink-card">
+              <span> ↗ </span>
+
+              <small> KEPERCAYAAN DIRI </small>
+
+              <h3>Lebih percaya diri</h3>
+
+              <p>
+                Melatih keberanian untuk tampil di depan banyak orang,
+                mengekspresikan diri, dan menunjukkan kemampuan melalui berbagai
+                pertunjukan tari.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits" id="manfaat">
+        <div class="section-number">04 / MANFAAT</div>
+
+        <div class="benefit-grid">
+          <div class="benefit-title">
+            <h2>
+              Bawa pulang
+
+              <span> lebih dari sekadar pengalaman. </span>
+            </h2>
+          </div>
+
+          <div class="benefit-items">
+            <div class="benefit-item">
+              <strong> 01 </strong>
+
+              <div>
+                <h3>Kreativitas</h3>
+
+                <p>
+                  Mengembangkan imajinasi dan kreativitas melalui gerakan,
+                  ekspresi, musik, serta berbagai karya seni tari.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <strong> 02 </strong>
+
+              <div>
+                <h3>Percaya Diri</h3>
+
+                <p>
+                  Membantu anggota menjadi lebih berani tampil di depan orang
+                  lain dan mengekspresikan diri melalui seni tari.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <strong> 03 </strong>
+
+              <div>
+                <h3>Kerja Sama</h3>
+
+                <p>
+                  Membiasakan anggota untuk bergerak secara kompak, menjaga
+                  koordinasi, saling mendukung, dan bekerja sama dalam sebuah
+                  pertunjukan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="join" id="gabung">
+        <div class="join-glow"></div>
+
+        <div class="join-content">
+          <span class="section-number"> 05 / BERGABUNG </span>
+
+          <h2>
+            Siap menjadi bagian
+
+            <span>Tari?</span>
+          </h2>
+
+          <p>
+            Yuk kembangkan bakat, tingkatkan kreativitas, latih kepercayaan
+            diri, dan lestarikan budaya bersama Ekskul Tari di EKSKUL TENGARAN.
+          </p>
+
+          <a href="index.html#pendaftaran" class="main-button">
+            Daftar Sekarang
+            <span>↗</span>
+          </a>
+        </div>
+
+        <div class="join-circle">
+          <span> TARI </span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="fw-bold mb-1">
+            EXTRAVIA &copy; 2026 - Pendaftaran Ekstrakurikuler
+          </div>
+          <small style="color: #888"
+            >Dirancang untuk kemudahan pendaftaran kegiatan siswa
+            sekolah.</small
+          >
+        </div>
+      </footer>
+    </main>
+    <script src="ekskul.js"></script>
+  </body>
+</html>

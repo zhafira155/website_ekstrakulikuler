@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EXTRAVIA - Pendaftaran Ekstrakurikuler</title>
+    <!-- Bootstrap 5, Bootstrap Icons, & Google Fonts -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== 1. NAVBAR ========== -->
+    <header class="navbar-extravia" id="beranda">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <div class="logo">EXTRAVIA</div>
+          <div class="logo-sub">EKSTRAKURIKULER SEKOLAH</div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+          <i class="bi bi-list"></i>
+        </button>
+        <nav class="nav-links align-items-center" id="navLinks">
+          <a href="index.html">Beranda</a>
+          <a href="#langkah">Cara Daftar</a>
+          <a href="#ekstrakurikuler">Ekstrakurikuler</a>
+          <a href="#pendaftaran" class="btn-nav-cta ms-3">Daftar Sekarang</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========== 2. HERO SECTION BARU ========== -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Sisi Kiri: Teks & Headline -->
+          <div class="col-lg-6">
+            <h1 class="hero-title">
+              TEMUKAN KEGIATAN
+              <span class="lime-box">YANG SESUAI</span> DENGANMU.
+            </h1>
+            <p class="hero-text">
+              Pilih dari 15 pilihan ekstrakurikuler unggulan sekolah. Asah
+              bakat, raih prestasi, dan ciptakan kenangan masa sekolah yang
+              berkesan!
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#ekstrakurikuler" class="btn-lime">
+                <i class="bi bi-compass-fill"></i> Jelajahi Ekskul
+              </a>
+              <a href="#pendaftaran" class="btn-hero-outline">
+                Form Pendaftaran <i class="bi bi-arrow-down-short"></i>
+              </a>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <strong>15</strong>
+                <span>Pilihan Ekskul</span>
+              </div>
+              <div class="stat">
+                <strong>3</strong>
+                <span>Langkah Daftar</span>
+              </div>
+              <div class="stat">
+                <strong>100%</strong>
+                <span>Online & Gratis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sisi Kanan: Visual Brutalist Card -->
+          <div class="col-lg-6 hero-visual-container">
+            <div class="hero-main-card">
+              <div class="hero-badge-top">Paling Populer</div>
+              <h4
+                style="
+                  font-family: &quot;Archivo Black&quot;, sans-serif;
+                  color: var(--lime);
+                "
+                class="mb-2"
+              >
+                Gabung Sekarang!
+              </h4>
+              <p style="font-size: 0.9rem; color: #ccc" class="mb-3">
+                Temukan ekstrakurikuler favoritmu dari berbagai bidang minat:
+              </p>
+
+              <div class="hero-preview-grid">
+                <div class="preview-tag">
+                  <i class="bi bi-trophy-fill"></i> Olahraga
+                </div>
+                <div class="preview-tag">
+                  <i class="bi bi-palette-fill"></i> Seni & Budaya
+                </div>
+                <div class="preview-tag">
+                  <i class="bi bi-flag-fill"></i> Kepemimpinan
+                </div>
+                <div class="preview-tag">
+                  <i class="bi bi-book-fill"></i> Keagamaan
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge -->
+            <div class="floating-mini-card">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: #666;
+                    text-transform: uppercase;
+                  "
+                >
+                  Pendaftaran 2026
+                </div>
+                <div>Kuota Masih Terbuka!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. MARQUEE TICKER (STRIP RUNNING TEXT LIME) ========== -->
+    <div class="strip-container">
+      <div class="strip-track">
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Paskibra</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Pramuka</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> PMR</span>
+        <span class="strip-item"
+          ><i class="bi bi-star-fill"></i> Bahasa Jepang</span
+        >
+        <span class="strip-item"
+          ><i class="bi bi-star-fill"></i> Pencak Silat</span
+        >
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Foster</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Voli</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Futsal</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Jurnalis</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> MTQ</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Rebana</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Rohis</span>
+        <span class="strip-item"
+          ><i class="bi bi-star-fill"></i> Paduan Suara</span
+        >
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Drumband</span>
+        <span class="strip-item"
+          ><i class="bi bi-star-fill"></i> Tari Tradisional</span
+        >
+        <!-- Duplicate for seamless looping -->
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Paskibra</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> Pramuka</span>
+        <span class="strip-item"><i class="bi bi-star-fill"></i> PMR</span>
+        <span class="strip-item"
+          ><i class="bi bi-star-fill"></i> Bahasa Jepang</span
+        >
+        <span class="strip-item"
+          ><i class="bi bi-star-fill"></i> Pencak Silat</span
+        >
+      </div>
+    </div>
+
+    <!-- ========== 4. LANGKAH PENDAFTARAN ========== -->
+    <section class="steps-section" id="langkah">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="section-tag">Alur Pendaftaran</span>
+          <h2 class="steps-title">Daftar Dalam 3 Langkah Mudah</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h3>Pilih Ekstrakurikuler</h3>
+              <p>
+                Eksplorasi 15 ekstrakurikuler di bawah dan klik tombol "Pilih &
+                Daftar" pada ekskul minatmu.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h3>Lengkapi Form Data</h3>
+              <p>
+                Isi formulir pendaftaran online yang sudah otomatis menyesuaikan
+                pilihan ekstrakurikuler milikmu.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h3>Kirim & Konfirmasi</h3>
+              <p>
+                Klik tombol submit pendaftaran. Selamat! Kamu resmi terdaftar
+                sebagai calon anggota baru.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. MACAM-MACAM EKSTRAKURIKULER ========== -->
+    <section class="ekskul-section" id="ekstrakurikuler">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">PILIH EKSTRAKURIKULERMU</h2>
+          <p style="color: #bbb; max-width: 550px" class="mx-auto">
+            Jelajahi berbagai kegiatan ekstrakurikuler sekolah dan langsung
+            daftar secara interaktif di bawah ini.
+          </p>
+        </div>
+
+        <!-- Controls: Search & Category Filter -->
+        <div class="ekskul-controls">
+          <div class="search-box">
+            <i class="bi bi-search"></i>
+            <input
+              type="text"
+              id="searchEkskul"
+              placeholder="Cari nama ekstrakurikuler..."
+            />
+          </div>
+
+          <div class="filter-pills">
+            <button class="filter-pill active" data-filter="all">
+              Semua (15)
+            </button>
+            <button class="filter-pill" data-filter="Olahraga">Olahraga</button>
+            <button class="filter-pill" data-filter="Seni">
+              Seni & Budaya
+            </button>
+            <button class="filter-pill" data-filter="Kepemimpinan">
+              Kepemimpinan
+            </button>
+            <button class="filter-pill" data-filter="Bahasa">
+              Sains & Bahasa
+            </button>
+            <button class="filter-pill" data-filter="Keagamaan">
+              Keagamaan
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid Cards Ekstrakurikuler -->
+        <div class="row g-3" id="ekskulGrid">
+          <!-- 1. Paskibra -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Kepemimpinan"
+            data-name="paskibra"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-flag-fill"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Paskibra</h3>
+                    <span class="ekskul-category">Kepemimpinan</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Melatih kedisiplinan, kekompakan, dan ketangkasan
+                  baris-berbaris untuk upacara & lomba formal.
+                </p>
+              </div>
+              <!-- KODE LAMA -->
+              <a href="paskib.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Pramuka -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Kepemimpinan"
+            data-name="pramuka"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-tree-fill"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Pramuka</h3>
+                    <span class="ekskul-category">Kepemimpinan</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Membentuk karakter mandiri, kepemimpinan, kecakapan alam
+                  terbuka, dan kebersamaan.
+                </p>
+              </div>
+              <a href="prasata.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. PMR -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Kepemimpinan"
+            data-name="pmr"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">PMR</h3>
+                    <span class="ekskul-category">Kepemimpinan</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Palang Merah Remaja melatih kesiapsiagaan pertolongan pertama
+                  & kepedulian kemanusiaan.
+                </p>
+              </div>
+              <a href="pmr.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Jepang -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Bahasa"
+            data-name="jepang japan club"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-translate"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Jepang</h3>
+                    <span class="ekskul-category">Sains & Bahasa</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Mempelajari percakapan bahasa Jepang, kebudayaan, anime, dan
+                  kesenian khas Negeri Sakura.
+                </p>
+              </div>
+              <a href="jepun.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. Silat -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Olahraga"
+            data-name="silat pencak silat"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-person-arms-up"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Silat</h3>
+                    <span class="ekskul-category">Olahraga</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Seni bela diri tradisional Indonesia untuk melatih ketangkasan
+                  fisik dan pertahanan diri.
+                </p>
+              </div>
+              <a href="silat.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. Foster -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Bahasa"
+            data-name="foster english club"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-globe"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Foster</h3>
+                    <span class="ekskul-category">Sains & Bahasa</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Klub komunikasi bahasa Inggris, debat, public speaking, serta
+                  wawasan internasional.
+                </p>
+              </div>
+              <a href="foster.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 7. Voli -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Olahraga"
+            data-name="voli bola voli"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-dribbble"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Voli</h3>
+                    <span class="ekskul-category">Olahraga</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Olahraga tim seru yang mengasah refleks, teknik smash, serta
+                  kerjasama antar pemain.
+                </p>
+              </div>
+              <a href="voli.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 8. Futsal -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Olahraga"
+            data-name="futsal sepakbola"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Futsal</h3>
+                    <span class="ekskul-category">Olahraga</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Wadah bagi pecinta bola untuk mengasah skill passing,
+                  strategi, dan stamina bertanding.
+                </p>
+              </div>
+              <a href="futsal.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 9. Jurnalis -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Seni"
+            data-name="jurnalis jurnalistik"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-newspaper"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Jurnalis</h3>
+                    <span class="ekskul-category">Seni & Budaya</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Belajar kepenulisan berita, fotografi majalah sekolah, meliput
+                  event, dan mendesain konten.
+                </p>
+              </div>
+              <a href="jurnalis.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 10. MTQ -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Keagamaan"
+            data-name="mtq mengaji"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-book-fill"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">MTQ</h3>
+                    <span class="ekskul-category">Keagamaan</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Musabaqah Tilawatil Qur'an: Melatih seni membaca Al-Qur'an
+                  dengan tartil dan tajwid yang indah.
+                </p>
+              </div>
+              <a href="mtq.html" class="btn-select-ekskul">
+                Pilih & Dafta <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 11. Rebana -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Keagamaan"
+            data-name="rebana hadroh"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-music-note-beamed"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Rebana</h3>
+                    <span class="ekskul-category">Keagamaan</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Seni musik islami dan hadroh untuk mengiringi lantunan
+                  shalawat dan acara keagamaan.
+                </p>
+              </div>
+              <a href="rebana.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 12. Rohis -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Keagamaan"
+            data-name="rohis kerohanian"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-moon-stars-fill"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Rohis</h3>
+                    <span class="ekskul-category">Keagamaan</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Kerohanian Islam: Memperdalam pemahaman keagamaan, kajian,
+                  serta kegiatan sosial sekolah.
+                </p>
+              </div>
+              <a href="rohis.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 13. Padus -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Seni"
+            data-name="padus paduan suara"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-mic-fill"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Padus</h3>
+                    <span class="ekskul-category">Seni & Budaya</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Paduan Suara: Melatih vokal, pernafasan, dan harmonisasi nada
+                  untuk penampil upacara & kompetisi.
+                </p>
+              </div>
+              <a href="padus.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 14. Drumband -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Seni"
+            data-name="drumband marching band"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-disc-fill"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Drumband</h3>
+                    <span class="ekskul-category">Seni & Budaya</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Kombinasi seni musik tiup/pukul dan koreografi barisan parade
+                  yang spektakuler.
+                </p>
+              </div>
+              <a href="drumband.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 15. Tari -->
+          <div
+            class="col-md-6 col-lg-4 ekskul-card-item"
+            data-category="Seni"
+            data-name="tari tradisional tarian"
+          >
+            <div class="ekskul-card">
+              <div>
+                <div class="ekskul-header">
+                  <div class="ekskul-icon-wrap">
+                    <i class="bi bi-stars"></i>
+                  </div>
+                  <div>
+                    <h3 class="ekskul-name">Tari</h3>
+                    <span class="ekskul-category">Seni & Budaya</span>
+                  </div>
+                </div>
+                <p class="ekskul-desc">
+                  Mempelajari keindahan gerak tari tradisional Nusantara maupun
+                  tarian kreasi modern.
+                </p>
+              </div>
+              <a href="tari.html" class="btn-select-ekskul">
+                Pilih & Daftar <i class="bi bi-arrow-down-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. FORM PENDAFTARAN ========== -->
+    <section class="form-section" id="pendaftaran">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-card" id="formDaftar">
+            <div class="text-center mb-4">
+              <h2 class="form-title">FORM PENDAFTARAN</h2>
+              <p class="form-subtitle">
+                Lengkapi formulir di bawah ini untuk menjadi anggota resmi
+                ekstrakurikuler.
+              </p>
+            </div>
+
+            <form id="registrationForm" novalidate>
+              <div class="mb-3">
+                <label for="nama">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="nama"
+                  placeholder="Masukkan nama lengkap Anda"
+                />
+                <small class="error-text" id="namaError"></small>
+              </div>
+
+              <div class="mb-3">
+                <label for="email">Email Aktif</label>
+                <input type="email" id="email" placeholder="nama@email.com" />
+                <small class="error-text" id="emailError"></small>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Minimal 8 karakter"
+                  />
+                  <small class="error-text" id="passwordError"></small>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="confirmPassword">Konfirmasi Password</label>
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Ulangi password"
+                  />
+                  <small class="error-text" id="confirmPasswordError"></small>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="ekskul">Pilihan Ekstrakurikuler</label>
+                <select id="ekskul">
+                  <option value="">-- Pilih Ekstrakurikuler --</option>
+                  <option value="Paskibra">Paskibra</option>
+                  <option value="Pramuka">Pramuka</option>
+                  <option value="PMR">PMR</option>
+                  <option value="Jepang">Jepang</option>
+                  <option value="Silat">Silat</option>
+                  <option value="Foster">Foster</option>
+                  <option value="Voli">Voli</option>
+                  <option value="Futsal">Futsal</option>
+                  <option value="Jurnalis">Jurnalis</option>
+                  <option value="MTQ">MTQ</option>
+                  <option value="Rebana">Rebana</option>
+                  <option value="Rohis">Rohis</option>
+                  <option value="Padus">Padus</option>
+                  <option value="Drumband">Drumband</option>
+                  <option value="Tari">Tari</option>
+                </select>
+                <small class="error-text" id="ekskulError"></small>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <i class="bi bi-send-fill me-1"></i> Kirim Pendaftaran
+              </button>
+            </form>
+            <div
+              id="successMessage"
+              class="success-message"
+              role="status"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="fw-bold mb-1">
+          EXTRAVIA &copy; 2026 - Pendaftaran Ekstrakurikuler
+        </div>
+        <small style="color: #888"
+          >Dirancang untuk kemudahan pendaftaran kegiatan siswa sekolah.</small
+        >
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
